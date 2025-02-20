@@ -1,0 +1,7 @@
+# Ignore IDE settings
+.vscode/
+
+# Ignore output files
+__pycache__/
+*.spec
+*.exe
