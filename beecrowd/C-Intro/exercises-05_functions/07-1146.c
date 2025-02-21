@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1146
+
 #include <stdio.h>
 
 int x;

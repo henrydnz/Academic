@@ -1,11 +1,13 @@
+//https://judge.beecrowd.com/pt/problems/view/1235
+
 #include <stdio.h>
 #include <string.h>
 
 void split(char *src, char *dst1, char *dst2) {
     int src_half_len = strlen(src) / 2;
-    //ponteiro pro meio, pro loop n ficar infinito
+    //half pointer to stop loop
     char *ptr_half_len = src + src_half_len;    
-    //dst1 recebe primeira metade, dst2 rewecbe segunda metade
+    //dst1 -> 1st half, dst2 -> 2nd half
     while (src < ptr_half_len) {
         *dst1 = *src;
         *dst2 = *(src + src_half_len);
@@ -13,8 +15,8 @@ void split(char *src, char *dst1, char *dst2) {
         dst2++;
         src++;
     }
-    *dst1 = '\0'; // terminador
-    *dst2 = '\0'; // terminador
+    *dst1 = '\0';
+    *dst2 = '\0';
 }
 
 void invert(char *src) {
@@ -22,7 +24,6 @@ void invert(char *src) {
     char *start = src;
     char *end = src + src_len - 1;
 
-    //inverte source
     while (start < end) {
         char aux = *start;
         *start = *end;
@@ -33,12 +34,12 @@ void invert(char *src) {
 }
 
 void virus(char *str) {
-    //divide string em dois, inverte cada um e concatena
     char str1[51], str2[51];
-    split(str, str1, str2);
-    invert(str1);
+    split(str, str1, str2);     //divide main string in two substrings
+    invert(str1);               //invert each substring
     invert(str2);
-    strcpy(str, strcat(str1, str2));
+    strcpy(str, strcat(str1, str2));    //concatenate substrings
+                                        //copy to main string
 }
 
 int main() {    

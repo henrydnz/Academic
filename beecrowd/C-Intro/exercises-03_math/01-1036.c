@@ -1,5 +1,6 @@
+//https://judge.beecrowd.com/pt/problems/view/1036
+
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 int main() 

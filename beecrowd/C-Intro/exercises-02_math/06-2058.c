@@ -1,3 +1,6 @@
+//https://judge.beecrowd.com/pt/problems/view/2058
+//triangulos e poligonos
+
 #include <stdio.h>
 
 int main() 

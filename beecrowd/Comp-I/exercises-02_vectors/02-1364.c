@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1364
+
 #include <stdio.h>
 
 void read(int array[], int size) {

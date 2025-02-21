@@ -1,12 +1,14 @@
+//https://judge.beecrowd.com/pt/problems/view/1234
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
 void dancing(char *str){
     for(int i=0; *str; str++){
-        //ignorar espaco
+        //ignore space
         if(*str!=' ') {
-            //i%2=0: maiusculo. i%2=1: minusculo
+            //even : is upper, odd : is lower
             *str = i%2==0?
                 (islower(*str)? toupper(*str): *str):
                 (islower(*str)? *str: tolower(*str));

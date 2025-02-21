@@ -1,41 +1,29 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 #define MAX 5
 
-void show(int array[], int size, int which) {
+void show(int array[], int size, int parity) {
     for(int i = 0; i < size; i++) {
-        printf(which? "impar": "par");
+        printf(parity? "impar": "par");
         printf("[%d] = %d\n", i, array[i]);
     }
 }
 
-void fill(int even[], int odd[]) {
-    int evenCount = 0, oddCount = 0, quotes = 15;
+int main() {
+    int array[2][MAX], count[2] = {0, 0}, quotes = 15, q, parity;
     while(quotes--) {
-        int q;
         scanf("%d", &q);
-        if(q%2) {
-            odd[oddCount] = q;
-            oddCount++;
-        } else {
-            even[evenCount] = q;
-            evenCount++;
-        }
-        if (oddCount == MAX) {
-            show(odd, MAX, 1);
-            oddCount = 0;
-        }
-        if (evenCount == MAX) {
-            show(even, MAX, 0);
-            evenCount = 0;
+        parity = abs(q%2);
+        array[parity][count[parity]] = q;
+        count[parity]++;
+        if(count[parity] == MAX) {
+            count[parity] = 0;
+            show(array[parity], MAX, parity);
         }
     }
-    show(odd, oddCount, 1);
-    show(even, evenCount, 0);
-}
-
-int main() {
-    int even[MAX], odd[MAX];
-    fill(even, odd);
+    show(array[1], count[1], 1);
+    show(array[0], count[0], 0);
     return 0;
 }
+
+

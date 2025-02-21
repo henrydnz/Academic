@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1145
+
 #include <stdio.h>
 
 void ans(int brkNum, int max) {

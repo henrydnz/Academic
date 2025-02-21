@@ -2,6 +2,7 @@
 .vscode/
 
 # Ignore output files
+output/
 __pycache__/
 *.spec
 *.exe

@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1149
+
 #include <stdio.h>
 int x, n, sum;
 void ans() { 

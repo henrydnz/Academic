@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1133
+
 #include <stdio.h>
 
 void ans(int x, int y) {

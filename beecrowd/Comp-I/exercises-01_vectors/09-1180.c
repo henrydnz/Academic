@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1180
+
 #include <stdio.h>
 
 #define INF 1e6

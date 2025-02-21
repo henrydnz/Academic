@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1930
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

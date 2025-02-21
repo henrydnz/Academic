@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1069
+
 #include <stdio.h>
 #include <string.h> 
 
@@ -14,7 +16,7 @@ int min(int a, int b){
 
 void remove_dots(char *src){
     char *dest = src;
-    //copia src pra dest, se acha . pula uma casa
+    //if not . : source -> dest
     while(*src){
         if(*src!='.'){
             *dest=*src;
@@ -22,7 +24,7 @@ void remove_dots(char *src){
         }
         src++;
     }
-    //final da string, dest -> src
+
     *dest = '\0';
     strcpy(src, dest);
 }
@@ -30,7 +32,7 @@ void remove_dots(char *src){
 void remove_diamond(char *src, char *diamond){
     char *dest = src;
 
-    //copia src pra dest, se acha <> pula 2 casas 
+    //if not <> : source -> dest
     while(*src){
         if(src==diamond)
             src+=2;
@@ -40,16 +42,18 @@ void remove_diamond(char *src, char *diamond){
             src++;
         }
     }
-    //final da string, dest -> src
+
     *dest='\0';
     strcpy(src,dest);
 }
 
 void count(char *str, int *answer){
     remove_dots(str);
-    //pointer pra <>
+
+    //<> pointer
     char *diamond = strstr(str,"<>");
-    //se houver <>, remove e conta, ate acabar
+
+    //if <> : remove & inc counter else : end
     while(diamond!=NULL){
         (*answer)++;
         remove_diamond(str,diamond);

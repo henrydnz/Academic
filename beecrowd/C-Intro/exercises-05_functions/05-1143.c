@@ -1,3 +1,5 @@
+////https://judge.beecrowd.com/pt/problems/view/1143
+
 #include <stdio.h>
 
 int sq(int x) { return x*x; }

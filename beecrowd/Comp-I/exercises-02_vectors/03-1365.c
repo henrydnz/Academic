@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1365
+
 #include <stdio.h>
 
 #define MAX 1e6

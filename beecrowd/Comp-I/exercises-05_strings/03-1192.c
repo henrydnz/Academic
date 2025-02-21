@@ -1,14 +1,16 @@
+//https://judge.beecrowd.com/pt/problems/view/1192
+
 #include <stdio.h>
 
 
 int compute(int x, char c, int y){
-    if(x==y)        //terceiro caso
+    if(x==y)       
         return x*y;
 
-    if(c>='a')      //segundo caso
+    if(c>='a')     
         return x+y;
 
-        return y-x;     //primeiro caso
+        return y-x;   
 }
 
 int main() {

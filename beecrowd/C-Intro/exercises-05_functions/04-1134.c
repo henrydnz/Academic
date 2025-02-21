@@ -1,5 +1,6 @@
+//https://judge.beecrowd.com/pt/problems/view/1134
+
 #include <stdio.h>
-// x e o numero, a b c sao os contadores eba eu sou um peixe 
 
 int x, a, b, c;
 

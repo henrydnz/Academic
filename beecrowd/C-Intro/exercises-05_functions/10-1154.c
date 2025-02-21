@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1154
+
 #include <stdio.h>
 
 int items, sum;

@@ -1,3 +1,6 @@
+//https://judge.beecrowd.com/pt/problems/view/2027
+
+//undone
 
 #include <stdio.h>
 #include <ctype.h>
@@ -21,7 +24,7 @@ void crypto(char *str){
         if(isalpha(*str))
             *str = (islower(*str)? y1: y2) - *str;    
         else if(isalnum(*str))
-            *str = '!' + (*str + '0');    //intchar + '0' = valor int
+            *str = '!' + (*str + '0');    //char + '0' = char to reciprocal int
         else if(isspace(*str))
             *str = '\\';
         str++;

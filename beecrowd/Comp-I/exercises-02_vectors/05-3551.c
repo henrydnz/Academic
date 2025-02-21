@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/3551
+
 #include <stdio.h>
 
 void read(int v[], int size) {

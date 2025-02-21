@@ -1,9 +1,11 @@
+//https://judge.beecrowd.com/pt/problems/view/2374
+
 #include <stdio.h>
 
 int main() 
 {
-    int pressaodigitadapelomotorista, pressaolidapelabomba;
-    scanf("%d %d", &pressaodigitadapelomotorista, &pressaolidapelabomba);
-    printf("%d\n", pressaodigitadapelomotorista - pressaolidapelabomba);
+    int pInput, pRead;
+    scanf("%d %d", &pInput, &pRead);
+    printf("%d\n", pInput - pRead);
     return 0;
 }

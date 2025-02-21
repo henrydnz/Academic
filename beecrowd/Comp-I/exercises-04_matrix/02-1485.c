@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1485
+
 #include <stdio.h>
 
 #define MAX 100

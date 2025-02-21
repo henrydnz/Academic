@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/1184
+
 #include <stdio.h>
 
 #define MAX 12

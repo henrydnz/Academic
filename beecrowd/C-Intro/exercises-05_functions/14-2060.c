@@ -1,3 +1,5 @@
+//https://judge.beecrowd.com/pt/problems/view/2060
+
 #include <stdio.h>
 int a, b, c, d;
 void ans() {
